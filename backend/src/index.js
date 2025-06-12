@@ -7,7 +7,7 @@ const app = express();
 
 const _dirname = path.resolve()
 app.use(cors({
-    origin: "http://localhost:5173"
+    origin: "https://ai-code-reviewer-ze81.onrender.com/"
 }))
 app.use(express.json())
 app.use("/ai", aiRoutes)
