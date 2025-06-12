@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100vh; /* Use viewport height */
+  width: 100%;
+  padding: 2.5rem;
+  display: flex;
+  gap: 1rem;
+  background-color: #1d1616;
+  overflow: hidden;
+}
+
+/* LEFT panel */
+main .left {
+  background-color: #000000;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  position: relative;
+  overflow: hidden;
+  padding: 1rem;
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+}
+
+.left .code {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.left .code pre code {
+  height: 100%;
+  width: 100%;
+}
+
+/* REVIEW Button */
+main .left .review {
+  background-color: #eae6f5;
+  padding: 0.5rem 1rem;
+  border-radius: 0.7rem;
+  color: #000000;
+  font-weight: 600;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 1rem;
+  align-self: flex-end;
+}
+
+main .left .review:hover {
+  background-color: #d4cce5;
+}
+
+/* RIGHT panel */
+main .right {
+  background-color: #4e4c4c;
+  flex-basis: 50%;
+  border-radius: 0.7rem;
+  color: #d4cce5;
+  padding: 1rem 2rem;
+  overflow-y: auto;
+  max-height: 100%;
+}
